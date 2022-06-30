@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 4rem;
+    background-color: transparent;
+
+    color: #f4f4f4;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+}
+
+/* === Logo Div === */
+.header_logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo-div span {
+    color:  #FF3830;
+}
+
+
+/* === Middle Nav === */
+.header_middle_nav-ul {
+    margin-left: 4.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 9rem;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.active {
+    width: 40px;
+    height: 2px;
+    background-color: #FF3830;
+}
+
+/* === Profile Div === */
+.profile {
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* === Header Logout Div === */
+.header_logout-div p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+li, .header_logo-div, .profile, .header_logout-div {
+    cursor: pointer;
+}

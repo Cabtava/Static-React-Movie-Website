@@ -1,0 +1,24 @@
+/* ================== IMPORT GOOGLE FONT INTER ================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* =============== GENERALS =============== */
+
+:root {
+ --color-main: #FF0000; 
+ --section-color: #1D1E22;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}

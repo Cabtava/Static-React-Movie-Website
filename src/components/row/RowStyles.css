@@ -1,0 +1,128 @@
+section {
+    background-color: #18191C;
+    width: 100%;
+
+    position: absolute;
+    padding: 15px;
+    margin-top: 12rem;
+}
+
+
+.row_poster-container{
+    padding: 15px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 5rem;
+}
+
+.div-div-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.category-div-top {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-div-div {
+    display: flex;
+    align-items: center;
+    color: #f4f4f4;
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
+.search-bar input {
+    width: 200px;
+    border: none;
+    outline: none;
+    color: #f4f4f4;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #f4f4f4;
+}
+
+.category-div-bottom {
+    padding: 0px 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.white {
+    width: 85%;
+    height: 4px;
+    background-color: #f4f4f4;
+    border-radius: 2px;
+
+    position: relative;
+}
+
+.red {
+    position: absolute;
+    width: 7%;
+    height: 4px;
+    background-color: red;
+    border-radius: 2px;
+}
+
+.title-poster {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.poster_image-div {
+    margin-bottom: 40px;
+    color: #f4f4f4;
+}
+
+.poster_image-div img {
+    cursor: pointer;
+}
+
+.bottom-div-cont {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-main);
+    border-radius: 50%;
+    width: 20px;
+    font-size: 12px;
+}
+
+.bot {
+    margin: 5rem 0;
+}
+
+.but {
+    height: 50px;
+}

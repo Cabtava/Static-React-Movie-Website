@@ -1,0 +1,265 @@
+main {
+    width: 100%;
+    height: 750px;
+    color: black;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(14, 14, 14));
+}
+
+/* == Poster Image Div == */
+.main_information-div {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 6rem;
+
+    color: #f4f4f4;
+}
+
+.poster_image-div {
+    width: 350px;
+    height: 500px;
+
+    border-radius: 20px;
+}
+
+.poster_image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    
+    border-radius: 20px;
+}
+
+/* === Genre === */
+.genre {
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dot {
+    font-size: 53px;
+}
+
+/* === Information Div Two === */
+.main_information-div-two {
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* === Overview Div === */
+.overview_div {
+    width: 750px;
+    height: 130px;
+    line-height: 27px;
+}
+
+/* === imb Div === */
+.imb_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imb_div-min, .imb_div-subtitle, .imb_div-imb {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.dot-red {
+    color: var(--color-main);
+}
+
+/* === Button Div === */
+
+button {
+    cursor: pointer;
+}
+
+.button_div {
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button-one {
+    color: #f4f4f4;
+    background-color: var(--color-main);
+    border: none;
+    border-radius: 30px;
+
+    font-family: 'Inter';
+    padding: .6rem;
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_icon-one {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.button-two {
+    font-family: 'Inter';
+    padding: .6rem;
+    width: 150px;
+
+    border: none;
+    color: #f4f4f4;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_icon-two {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+/* === Date Section Container === */
+.date_section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 90px 150px;
+    width: 100%;
+    height: 200px;
+    background-color: var(--section-color);
+
+}
+
+.first_date-container {
+    width: 370px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+}
+
+.slider-icon {
+    position: absolute;
+    color: var(--color-main);
+
+    background-color: var(--section-color);
+    height: 50px;
+    width: 20px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.left {
+    left: -2px;
+}
+
+.right {
+    right: -2px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-card {
+    color: #f4f4f4;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 0 5px;
+}
+
+.div-slider-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-div {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.date-paragraph-title {
+    color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+/* ====== Date Card JS File ====== */
+.date-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -2px;
+    
+    font-size: 14.5px;
+}
+
+.top-date-card {
+    color: gray;
+}
+
+.b {
+    height: 50px;
+}
+
+/* ====== Media Screen ====== */
+
+@media only screen and (max-width: 500px)
+{
+    .main_information-div {
+        grid-template-columns: repeat(1, auto);
+    }
+}
